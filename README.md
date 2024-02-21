@@ -1,6 +1,7 @@
 # flutter_noted_apps
 
 A new Flutter project.
+Learning create noted_apps from FIC (Flutter Intensive Club) with Bahri
 
 ## Getting Started
 
