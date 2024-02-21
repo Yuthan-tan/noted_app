@@ -13,7 +13,7 @@ class _DetailPageState extends State<DetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Detail Note',
           style: TextStyle(color: Colors.white),
         ),
@@ -21,13 +21,13 @@ class _DetailPageState extends State<DetailPage> {
         backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       body: ListView(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         children: [
           Text(
             'Title',
             style: Theme.of(context).textTheme.titleLarge,
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Text(
@@ -39,10 +39,10 @@ class _DetailPageState extends State<DetailPage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return EditPage();
+            return const EditPage();
           }));
         },
-        child: Icon(
+        child: const Icon(
           Icons.edit,
         ),
       ),

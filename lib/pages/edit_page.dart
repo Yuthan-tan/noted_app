@@ -12,7 +12,7 @@ class _EditPageState extends State<EditPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Edit Note',
           style: TextStyle(color: Colors.white),
         ),
@@ -20,7 +20,7 @@ class _EditPageState extends State<EditPage> {
         backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       body: ListView(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         children: [
           TextFormField(
             decoration: const InputDecoration(
@@ -35,7 +35,7 @@ class _EditPageState extends State<EditPage> {
             },
           ),
           TextFormField(
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               labelText: 'Content',
               border: OutlineInputBorder(),
             ),
@@ -47,14 +47,14 @@ class _EditPageState extends State<EditPage> {
               return null;
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.save),
+        child: const Icon(Icons.save),
       ),
     );
   }

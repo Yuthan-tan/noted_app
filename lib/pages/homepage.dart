@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
           return InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return DetailPage();
+                return const DetailPage();
               }));
             },
             child: Card(
